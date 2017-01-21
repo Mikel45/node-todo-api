@@ -4,11 +4,11 @@ const {mongoose} = require('./../server/db/mongoose');
 const {Todo} = require('./../server/models/todo');
 const {User} = require('./../server/models/user');
 
-// var id = '58829311cc375324283251111';
+var id = 58829311cc375324283251111;
 
-// if (!ObjectID.isValid(id)) {
-//     console.log('ID not valid');
-// };
+if (!ObjectID.isValid(id)) {
+    console.log('ID not valid');
+};
 
 // Todo.find({
 //     _id: id
@@ -28,9 +28,9 @@ const {User} = require('./../server/models/user');
 //     console.log('Todo By Id', todo);
 // }).catch((e) => console.log(e));
 
-User.findById('587fdf35ce15a04c2fab254e').then((user) => {
-    if (!user) {
-        return console.log('User not found');
-    }
-    console.log(JSON.stringify(user, undefined, 2));
-}, (e) => console.log(e));
+// User.findById('587fdf35ce15a04c2fab254e').then((user) => {
+//     if (!user) {
+//         return console.log('User not found');
+//     }
+//     console.log(JSON.stringify(user, undefined, 2));
+// }, (e) => console.log(e));
